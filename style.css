@@ -115,3 +115,8 @@ body {
   background-size: 85px;
   background-position: 45px;
 }
+
+span:nth-child(4) .tape {
+  transform: translateX(-50%) rotate(270deg);
+  background-position: 30px;
+}
