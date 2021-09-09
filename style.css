@@ -17,6 +17,17 @@ body {
   height: 300px;
   transform-style: preserve-3d;
   transform: rotateX(-30deg) rotateY(50deg);
+  // Rotate box
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
 }
 
 // Add Drop Shadow
