@@ -16,7 +16,7 @@ body {
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
-  transform: rotateX(-30deg) rotateY(330deg);
+  transform: rotateX(-30deg) rotateY(240deg);
 }
 
 #box div {
@@ -46,6 +46,17 @@ body {
   background: #d8aa77;
 }
 
+#box div span:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(Images/amazon.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #box div span:nth-child(2) {
   transform: rotateY(90deg) translate3d(0, 0, 150px);
   background: #ca9864;
@@ -54,6 +65,17 @@ body {
 #box div span:nth-child(3) {
   transform: rotateY(180deg) translate3d(0, 0, 150px);
   background: #d8aa77;
+}
+
+#box div span:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(Images/arrow.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #box div span:nth-child(4) {
